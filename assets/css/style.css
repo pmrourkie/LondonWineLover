@@ -1118,6 +1118,9 @@ h5.single-post-content-tag{
    10. Footer - The bottom of every page
    ========================================================================== */
 
+.post-footer a, a.hover{
+    border-bottom: none;
+}
 .site-footer {
     position: relative;
     margin: 13rem 0 0 0;
@@ -1662,6 +1665,19 @@ h5.single-post-content-tag{
 
 
 
+/*Social code */
+.share-buttons{
+    color: #fff;
+    list-style: none;
+}
+
+.share-buttons li{
+    display: inline;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-google-plus-square, .fa-tumblr-square{
+    color: #fff;
+}
 /* ==========================================================================
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
