@@ -1,0 +1,49 @@
+{{!< default}}
+
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <div data-animate="fadeDown" class="site-head-content inner">
+            
+            <h1 class="blog-title">{{@blog.title}}</h1>
+            
+            <h2 class="blog-description">{{@blog.description}}</h2>
+            <a href="https://github.com/rourkie/ukpolcss/blob/master/css/ukpol.css" class="button grn"> <i class="fa fa-location-arrow"></i> Find Wine Near Me</a>
+            <div class="blog-social">
+            {{! Including the social template (partials/social)}}
+            {{> socials}}
+            </div>
+        
+        </div>
+    </div>
+    
+    <a data-animate="swing" class="arrow-header" href='#'></a>
+       <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+
+
+</header>
+
+<main class="content-index content" role="main">
+    {{! Including the menu template (partials/menu)}}
+    {{> menu}}
+
+    <div id="view-menu">
+        <div class="view-menu-cont">
+   
+          <!--   <a class="btn-select">
+               All tags 
+            </a> -->
+   <!-- 
+            <ul class="menu-list-tag"></ul> -->
+        
+<!--             <a class="list-view" href="#"></a>
+ --><!--             <a class="grid-view grid-view-active" href="#"></a>
+ -->   
+        </div> 
+    </div>
+
+</main>
+
+    <div class="container">
+
+   <div id="map"></div>
+      <script src="/assets/js/map.js"></script>
